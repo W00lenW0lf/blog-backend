@@ -74,7 +74,7 @@
                 </div>
                 <div class="blog__slide__content">
                     <h3><a href="#">{{ post.title }}</a></h3>
-                    <p>{{ post.image_url }}</p>
+                    <p>{{ post.published_at }}</p>
                 </div>
               </div>
             </div>
@@ -99,7 +99,7 @@
                     {% endif %}
                     <ul class="thumb-info">
                       <li><a href="#"><i class="ti-user"></i>{{ post.author }}</a></li>
-                      <li><a href="#"><i class="ti-notepad"></i>{{ post.image_url }}</a></li>
+                      <li><a href="#"><i class="ti-notepad"></i>{{ post.published_at }}</a></li>
                       <li><a href="#"><i class="ti-themify-favicon"></i>{{ post.comments_amount }}</a></li>
                     </ul>
                   </div>
