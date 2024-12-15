@@ -7,9 +7,15 @@
   <link rel="icon" href="{% static 'img/favicon.png' %}" type="png">
   <link rel="stylesheet" href="{% static 'styles.min.css' %}">
   <title>Sensive Blog - {% block title %}{% endblock %}</title>
+  {% block header %}
+  {% endblock %}
 </head>
 <body>
-{% block content %}
-{% endblock %}
+  {% block content %}
+  {% endblock %}
 </body>
+<footer>
+  {% block footer %}
+  {% endblock %}
+</footer>
 <script src="{% static 'scripts.js' %}"></script>

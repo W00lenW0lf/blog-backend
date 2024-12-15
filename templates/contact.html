@@ -6,7 +6,7 @@
   {% block title %}Contact{% endblock %}
 </head>
 <body>
-{% block content %}
+{% block header %}
 <!--================Header Menu Area =================-->
 <header class="header_area">
   <div class="main_menu">
@@ -38,7 +38,8 @@
   </div>
 </header>
 <!--================Header Menu Area =================-->
-
+{% endblock %}
+{% block content %}
 <!--================ Hero sm banner start =================-->
 <section class="mb-30px">
   <div class="container">
@@ -120,8 +121,8 @@
   </div>
 </section>
 <!-- ================ contact section end ================= -->
-
-
+{% endblock %}
+{% block footer %}
 <!--================ Start Footer Area =================-->
 <footer class="footer-area section-padding">
   <div class="container">

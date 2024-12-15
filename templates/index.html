@@ -6,8 +6,7 @@
   {% block title %}Home{% endblock %}
 </head>
 <body>
-
-{% block content %}
+{% block header %}
 <!--================Header Menu Area =================-->
 <header class="header_area">
   <div class="main_menu">
@@ -39,7 +38,8 @@
   </div>
 </header>
 <!--================Header Menu Area =================-->
-
+{% endblock %}
+{% block content %}
 <main class="site-main">
   <!--================Hero Banner start =================-->
   <section class="mb-30px">
@@ -162,7 +162,8 @@
   </section>
   <!--================ End Blog Post Area =================-->
 </main>
-
+{% endblock %}
+{% block footer %}
 <!--================ Start Footer Area =================-->
 <footer class="footer-area section-padding">
   <div class="container">
