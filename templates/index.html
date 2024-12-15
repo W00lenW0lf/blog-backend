@@ -11,6 +11,7 @@
 <header class="header_area">
   <div class="main_menu">
     <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container box_1620">
         <!-- Brand and toggle get grouped for better mobile display -->
         <a class="navbar-brand logo_h" href="{% url 'index' %}"><img src="{% static 'img/logo.png' %}" alt="логотип сайта"></a>
@@ -97,7 +98,7 @@
               <ul class="thumb-info">
                 <li><a href="#"><i class="ti-user"></i>{{ post.author }}</a></li>
                 <li><a href="#"><i class="ti-notepad"></i>{{ post.published_at }}</a></li>
-                <li><a href="#"><i class="ti-themify-favicon"></i>{{ post.comments_amount }}</a></li>
+                <li><a href="#"><i class="ti-themify-favicon"></i>{{ post.comments_amount }} Comments</a></li>
               </ul>
             </div>
             <div class="details mt-20">
