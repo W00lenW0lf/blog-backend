@@ -1,7 +1,5 @@
 {% extends 'base.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
 <head>
   {% block title %}Contact{% endblock %}
 </head>
@@ -14,7 +12,7 @@
   <h1>Contact Us</h1>
   <nav aria-label="breadcrumb" class="banner-breadcrumb">
     <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
       <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
     </ol>
   </nav>
@@ -88,4 +86,3 @@
 {% block footer %}
 {% endblock %}
 </body>
-</html>

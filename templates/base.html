@@ -1,5 +1,6 @@
 {% load static %}
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
   <link rel="icon" href="{% static 'img/favicon.png' %}" type="png">
   <link rel="stylesheet" href="{% static 'styles.min.css' %}">
   <title>Sensive Blog - {% block title %}{% endblock %}</title>
+</head>
 
   <!--================Header Menu Area =================-->
   <header class="header_area">
@@ -41,7 +43,7 @@
     </div>
   </header>
   <!--================Header Menu Area end=================-->
-</head>
+
 <body>
 
 <main class="site-main">
@@ -135,3 +137,4 @@
 
 
 <script src="{% static 'scripts.js' %}"></script>
+</html>
